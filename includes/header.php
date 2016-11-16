@@ -17,19 +17,18 @@
 </head>
 <body>
 
-	<div class="head_nav">
-		<div class="wrapper">
-			<img src="assets/images/rdesk_logo_white.png">
+<?php
+session_start();
 
-			<ul>
-				<li>Ingelogd als: TEST</li>
-				<li>My info</li>
-				<li>Help</li>
-				<li>Logout</li>
-			</ul>
-		</div>
-	</div>
+	if(ISSET($_SESSION['email'])) {
+		include('includes/nav_loggedin.php');
 
-	<!-- <div class="side_nav">
-		HAHAHAH WUT
-	</div> -->
+		// if($_SESSION['rights'] == 3) {
+		// 	include('admin_panel.php');
+		// }
+	}
+	else {
+		include('includes/nav.php');
+	}
+?>
+	

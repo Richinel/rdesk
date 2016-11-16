@@ -17,13 +17,21 @@
 					<div class='ticket_body'>
 						".$row['msg']."
 					</div>
+				";
+
+			if($_SESSION['role'] == 3) {
+				echo 
+				"
+					<hr>
 					<div class='ticket-btns'>
 						<button>Reageren</button>
 						<button>Verwijderen</button>
 						<button>Afgehandeld</button>
 					</div>
-				</div>	
-			";
+				";
+			}
+
+			echo "</div>";		
 		}
 	} 
 

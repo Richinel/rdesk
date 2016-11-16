@@ -18,7 +18,7 @@ textarea {
 }
 .head_nav {
   position: absolute;
-  height: 100px;
+  height: 75px;
   background: #4364db;
   color: white;
   left: 0;
@@ -32,7 +32,7 @@ textarea {
   margin: auto;
 }
 .head_nav .wrapper img {
-  height: 90px;
+  height: 65px;
   width: auto;
   margin-top: 5px;
 }
@@ -41,15 +41,20 @@ textarea {
   position: absolute;
   top: 0px;
   right: 1px;
-  line-height: 100px;
+  line-height: 75px;
 }
 .head_nav .wrapper ul li {
   display: inline-block;
   margin-left: 20px;
-  height: 100px;
+  height: 75px;
+}
+.head_nav .wrapper ul .logoff {
+  background: #427daf;
+  width: 50px;
+  text-align: center;
 }
 .content {
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 20px;
 }
 .content .wrapper {
@@ -57,22 +62,27 @@ textarea {
   max-width: 1400px;
   margin: auto;
 }
+.login_form {
+  max-width: 600px;
+  margin: auto;
+}
 .ticket {
   width: 100%;
   border: 1px solid #56a9dd;
   border-radius: 2px;
-  padding: 5px;
+  padding: 15px;
   position: relative;
   color: #262626;
   overflow: hidden;
   margin-bottom: 20px;
+  opacity: 0.85;
 }
 .ticket .ticket_title {
   font-weight: bold;
 }
 .ticket .ticket_title span {
   position: absolute;
-  right: 5px;
+  right: 15px;
 }
 .ticket .ticket-btns {
   display: block;
@@ -80,6 +90,10 @@ textarea {
 }
 .ticket .ticket-btns button {
   margin-left: 10px;
+  padding: 8px 5px !important;
+}
+.ticket:hover {
+  opacity: 1;
 }
 .menu p {
   width: 100%;
@@ -89,12 +103,15 @@ textarea {
   background: #3f65c6;
   opacity: 0.8;
   color: white;
-  padding: 5px;
+  padding: 7px;
   border-radius: 2px;
   cursor: pointer;
 }
 .menu p:hover {
   opacity: 1;
+}
+.menu i {
+  width: 20px;
 }
 .add_form {
   position: fixed;
@@ -115,4 +132,7 @@ textarea {
   background-color: white;
   margin: auto;
   border-radius: 2px;
+}
+.clickable {
+  cursor: pointer;
 }

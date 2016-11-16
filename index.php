@@ -3,18 +3,30 @@
 	include('includes/header.php'); 
 ?>
 	<div class="content">
-
-		<?php include('includes/add_ticket.php'); ?>
 		<div class="wrapper">
-			<div class="row">
-				<div class="col col-2">
-					<?php include('includes/side_menu.php'); ?>
-				</div>
+			<fieldset class="login_form">
+				<legend>Inloggen | RDesk</legend>
+					<form method="post" action="controllers/login.php" class="form">
+						<div class="form-item">
+					        <label>E-mailadres</label>
+					        <input type="email" name="email" class="width-100">
+					    </div>
 
-				<div class="col col-10">
-					<?php include('includes/tickets_overview.php'); ?>
-				</div>
-			</div>
+					    <div class="form-item">
+					        <label>Wachtwoord</label>
+					        <input type="password" name="password" class="width-100">
+					    </div>
+
+					    <div class="form-item">
+					        <button class="button primary">Inloggen</button>
+					        <div class="button cancel_btn">Annuleren</div>
+					    </div>
+					</form>
+
+					<p>
+						Geen account? <span class="register clickable"><strong>Registreer je dan hier!</strong></span>
+					</p>
+			</fieldset>
 		</div>
 	</div>
 
