@@ -7,6 +7,6 @@ $msg	 	= $_POST['msg'];
 
 $conn->query("INSERT INTO tickets(subject, msg) VALUES('$subject', '$msg')");
 
-header("Location: ../index.php");
+header("Location: ../tickets.php");
 
 ?>
