@@ -5,7 +5,7 @@ include('dbconnect.php');
 $subject 	= $_POST['subject'];
 $msg	 	= $_POST['msg'];
 
-$conn->query("INSERT INTO tickets(subject, msg) VALUES('$subject', '$msg')");
+$conn->query("INSERT INTO tickets(subject, msg, status) VALUES('$subject', '$msg', 'openstaand')");
 
 header("Location: ../tickets.php");
 
