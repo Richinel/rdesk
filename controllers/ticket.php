@@ -1,7 +1,7 @@
 <?php
 	include('dbconnect.php');
 
-	$sql 	= "SELECT * FROM tickets";
+	$sql 	= "SELECT * FROM tickets, users";
 	$result	= $conn->query($sql);
 
 	if ($result->num_rows > 0) {
@@ -15,6 +15,7 @@
 					</div>
 						<hr>
 					<div class='ticket_body'>
+						<span class='label outline'>".$row['first_name']."</span><br>
 						".$row['msg']."
 					</div>
 				";
