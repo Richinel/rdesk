@@ -1,7 +1,7 @@
 <?php
 	include('dbconnect.php');
 
-	$sql 	= "SELECT * FROM tickets, users";
+	$sql 	= "SELECT * FROM tickets ORDER BY date DESC";
 	$result	= $conn->query($sql);
 
 	if ($result->num_rows > 0) {
@@ -13,9 +13,9 @@
 						".$row['ticket_id']." | ".$row['subject']."
 						<span class='date'>".$row['date']."</span>
 					</div>
+						<span class='label outline'>".$row['created_by']."</span>
 						<hr>
 					<div class='ticket_body'>
-						<span class='label outline'>".$row['first_name']."</span><br>
 						".$row['msg']."
 					</div>
 				";

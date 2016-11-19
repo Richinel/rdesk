@@ -21,6 +21,7 @@
 session_start();
 
 	if(ISSET($_SESSION['email'])) {
+		
 		include('includes/nav_loggedin.php');
 
 		// if($_SESSION['rights'] == 3) {
