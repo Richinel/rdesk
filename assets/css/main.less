@@ -5,12 +5,13 @@
 @bl3:		#4364db;
 @bl4:		#3f65c6;
 @bl5:		#427daf;
-@black:		#262626;
+@black:		#333333;
 
 
 body {
 	font-family: 'Didact Gothic', sans-serif;
 	color: black;
+	background: url('../images/geometry2.png');
 }
 
 hr {
@@ -33,7 +34,7 @@ textarea {
 .head_nav {
 	position: absolute;
 	height: 75px;
-	background: @bl3;
+	background: @black;
 	color: white;
 	left: 0;
 	right: 0;
@@ -65,9 +66,13 @@ textarea {
 			}
 
 			.logoff {
-				background: @bl5;
+				background: lighten(@black, 10%);
 				width: 50px;
 				text-align: center;
+
+				&:hover {
+					background: @bl3;
+				}
 			}
 		}
 	}
@@ -91,8 +96,10 @@ textarea {
 
 .ticket {
 	width: 100%;
-	border: 1px solid @bl2;
-	border-radius: 2px;
+	background-color: white;
+	//border: 1px solid @bl2;
+	box-shadow: 0px 0px 10px #ccc;
+	border-radius: 1px;
 	padding: 15px;
 	position: relative;
 	color: @black;
@@ -113,9 +120,22 @@ textarea {
 		display: block;
 		float: right;
 
-		button {
+		a {
 			margin-left: 10px;
-			padding: 8px 5px !important;
+			background: #80b3ff;
+			height: 30px !important;
+			width: 35px;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 2px;
+			box-shadow: 0px 0px 10px lighten(@black, 40%);
+			color: #005ce6;
+			opacity: 0.85;
+			display: inline-block;
+
+			&:hover {
+				opacity: 1;
+			}
 		}
 	}
 
@@ -125,17 +145,24 @@ textarea {
 }
 
 .menu {
-	p {
+	a,
+	button {
 		width: 100%;
+		background: white;
 		display: block;
 		min-height: 30px;
 		line-height: 30px;
-		background: @bl4;
+		//background: @bl4;
+		box-shadow: 0px 0px 10px #ccc;
+		border-radius: 1px;
 		opacity: 0.8;
-		color: white;
+		color: black;
 		padding: 7px;
 		border-radius: 2px;
 		cursor: pointer;
+		margin-bottom: 20px;
+		text-align: left;
+		text-decoration: none;
 
 		&:hover {
 			opacity: 1;
@@ -144,6 +171,7 @@ textarea {
 
 	i {
 		width: 20px;
+		color: #3399ff;
 	}
 }
 
@@ -166,6 +194,34 @@ textarea {
 		background-color: white;
 		margin: auto;
 		border-radius: 2px;
+		position: relative;
+
+		button {
+			-webkit-appearance: none;
+			background: #80b3ff;
+			width: 100%;
+			color: white;
+			height: 20px !important;
+			border-radius: 0px 0px 2px 2px;
+			margin-bottom: 15px;
+			//box-shadow: 0px 0px 10px #ccc;
+		}
+
+		.cancel_btn {
+			top: 10px;
+			right: 10px;
+			border: 1px solid @bl1;
+			height: 40px;
+			border-radius: 2px;
+			color: @bl1;
+			line-height: 40px;
+			text-align: center;
+			cursor: pointer;
+
+			&:hover {
+				background-color: lighten(@bl1, 20%);
+			}
+		}
 	}
 }
 

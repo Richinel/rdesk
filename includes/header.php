@@ -23,6 +23,7 @@ session_start();
 	if(ISSET($_SESSION['email'])) {
 		
 		include('includes/nav_loggedin.php');
+		include('includes/sortdate.php');
 
 		// if($_SESSION['rights'] == 3) {
 		// 	include('admin_panel.php');

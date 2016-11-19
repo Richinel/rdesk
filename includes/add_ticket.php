@@ -2,6 +2,8 @@
 
 	<div class="form_div">	
 		<h3>Ticket aanmaken</h3>
+
+
 		<form method="post" action="controllers/add_ticket_c.php" class="form">
 			<div class="form-item">
 		        <label>Onderwerp</label>
@@ -13,9 +15,17 @@
 		        <textarea name="msg" rows="6" required="Dit veld is veplicht"></textarea>
 		    </div>
 
+		    <input type='hidden' name='uid' value="<?php echo $_SESSION['user_id']; ?>">
+
 		    <div class="form-item">
-		        <button class="button primary">Aanmaken</button>
-		        <div class="button cancel_btn">Annuleren</div>
+		        <div class="row">
+		        	<div class="col">
+		        		<button class="accept_btn">Aanmaken</button>
+		        	</div>
+		        	<div class="col">
+		        		<div class="cancel_btn">Annuleren</div>
+		        	</div>
+		        </div>
 		    </div>
 
 		</form>
