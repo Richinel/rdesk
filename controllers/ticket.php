@@ -17,16 +17,17 @@
 						<span class='date'>".sortDate($row['postdate'])."</span>
 					</div>
 						<span class='label outline'>".$name."</span>
+						
+					<div class='ticket_content'>
 						<hr>
-					<div class='ticket_body'>
-						".$row['msg']."
-					</div>
+						<div class='ticket_body'>
+							".$row['msg']."
+						</div>
 				";
 
 			if($_SESSION['role'] == 3) {
 				echo 
-				"
-					<hr>
+				"				
 					<div class='ticket-btns'>
 						<a href='tickets.php?tid=".$row['ticket_id']."&action=respond' title='Reageren'><i class='fa fa-reply' aria-hidden='true'></i></a>
 						<a href='tickets.php?tid=".$row['ticket_id']."&action=delete' title='Verwijderen'><i class='fa fa-trash' aria-hidden='true'></i></a>
@@ -35,7 +36,9 @@
 				";
 			}
 
-			echo "</div>";		
+			echo "
+					</div>
+				</div>";		
 		}
 	} 
 

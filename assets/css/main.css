@@ -68,7 +68,17 @@ textarea {
 }
 .login_form {
   max-width: 600px;
+  width: 95%;
+  padding: 30px;
+  background: white;
+  box-shadow: 0px 0px 10px #ccc;
   margin: auto;
+}
+.login_form button,
+.login_form .cancel_btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .ticket {
   width: 100%;
@@ -81,6 +91,7 @@ textarea {
   overflow: hidden;
   margin-bottom: 20px;
   opacity: 0.85;
+  cursor: pointer;
 }
 .ticket .ticket_title {
   font-weight: bold;
@@ -108,6 +119,9 @@ textarea {
 }
 .ticket .ticket-btns a:hover {
   opacity: 1;
+}
+.ticket .ticket_content {
+  display: none;
 }
 .ticket:hover {
   opacity: 1;
