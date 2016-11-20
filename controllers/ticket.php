@@ -3,11 +3,11 @@
 
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
-			$uid 			= $row['created_by'];
-			$sql			= "SELECT first_name FROM users WHERE user_id = $uid";
-			$name			= $conn->query($sql);
-			$name 			= $name->fetch_assoc();
-			$name 			= $name['first_name'];
+			$uid 	= $row['created_by'];
+			$sql	= "SELECT first_name FROM users WHERE user_id = $uid";
+			$name	= $conn->query($sql);
+			$name 	= $name->fetch_assoc();
+			$name 	= $name['first_name'];
 
 			echo 
 			"
@@ -17,7 +17,7 @@
 						<span class='date'>".sortDate($row['postdate'])."</span>
 					</div>
 						<span class='label outline'>".$name."</span>
-						
+
 					<div class='ticket_content'>
 						<hr>
 						<div class='ticket_body'>

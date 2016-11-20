@@ -24,10 +24,6 @@ session_start();
 		
 		include('includes/nav_loggedin.php');
 		include('includes/sortdate.php');
-
-		// if($_SESSION['rights'] == 3) {
-		// 	include('admin_panel.php');
-		// }
 	}
 	else {
 		include('includes/nav.php');
