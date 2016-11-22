@@ -103,6 +103,7 @@ textarea {
 .ticket .ticket-btns {
   display: block;
   float: right;
+  margin-top: 20px;
 }
 .ticket .ticket-btns a {
   margin-left: 10px;

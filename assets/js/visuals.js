@@ -8,7 +8,7 @@ var main = function() {
     }); 
 
     $('.ticket').click(function() {
-    	$('.ticket_content').slideToggle(300);
+    	$(this).children('.ticket_content').slideToggle(150);
     });
 };
 
