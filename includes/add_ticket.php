@@ -1,4 +1,4 @@
-<div class="add_form">
+<div class="add_form" id='addTicket'>
 
 	<div class="form_div">	
 		<h3>Ticket aanmaken</h3>
@@ -23,7 +23,7 @@
 		        		<button class="accept_btn">Aanmaken</button>
 		        	</div>
 		        	<div class="col">
-		        		<div class="cancel_btn">Annuleren</div>
+		        		<div class="cancel_btn" id='addTicketCancel'>Annuleren</div>
 		        	</div>
 		        </div>
 		    </div>

@@ -29,7 +29,7 @@
 				echo 
 				"				
 					<div class='ticket-btns'>
-						<a href='tickets.php?tid=".$row['ticket_id']."&action=respond' title='Reageren'><i class='fa fa-reply' aria-hidden='true'></i></a>
+						<a class='respond' href='#'><i class='fa fa-reply' aria-hidden='true'></i></a>
 						<a href='tickets.php?tid=".$row['ticket_id']."&action=delete' title='Verwijderen'><i class='fa fa-trash' aria-hidden='true'></i></a>
 						<a href='tickets.php?tid=".$row['ticket_id']."&action=done' title='Afgehandeld'><i class='fa fa-check' aria-hidden='true'></i></a>
 					</div>

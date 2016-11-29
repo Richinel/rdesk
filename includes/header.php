@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/kube.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-	<link rel="icon" type="image/png" href="./favicon.png" />
+	<!-- <link rel="icon" type="image/png" href="./favicon.png" /> -->
 
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/visuals.js"></script>
@@ -24,6 +24,7 @@ session_start();
 		
 		include('includes/nav_loggedin.php');
 		include('includes/sortdate.php');
+		//include('includes/ticket_modal.php');
 	}
 	else {
 		include('includes/nav.php');

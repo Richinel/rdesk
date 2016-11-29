@@ -116,7 +116,20 @@ textarea {
 	overflow: hidden;
 	margin-bottom: 20px;
 	opacity: 0.85;
-	cursor: pointer;
+	//cursor: pointer;
+
+	.open_ticket {
+		cursor: pointer;
+		display: block;
+		margin: auto;
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		line-height: 50px;
+		font-size: 25px;
+		transition: 75ms cubic-bezier(.07,.7,.92,.58);
+	}
 
 	.ticket_title {
 		font-weight: bold;
@@ -125,6 +138,11 @@ textarea {
 			position: absolute;
 			right: 15px;
 		}
+	}
+
+	.active {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
 	}
 
 	.ticket-btns {
@@ -239,6 +257,40 @@ textarea {
 			}
 		}
 	}
+}
+
+.modal {
+	position: fixed;
+	margin-top: 0px !important;
+	border-radius: 0px;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+	display: none;
+
+	.modal_content {
+		margin-top: 75px !important;
+		width: @width;
+		max-width: 900px;
+		height: auto;
+		padding: 20px;
+		background-color: white;
+		margin: auto;
+		border-radius: 2px;
+		position: relative;
+
+		.modal_header {
+			font-size: 20px;
+		}
+
+		.modal_body {
+			padding: 15px 0;
+		}
+	}
+
 }
 
 .clickable {
